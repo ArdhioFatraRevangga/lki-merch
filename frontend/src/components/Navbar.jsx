@@ -1,14 +1,25 @@
+import logoLki from '../assets/logo-lkimerch-putih.png';
+import logoWa from '../assets/wa.png';
+import logoIg from '../assets/ig.png'; // Pastikan import IG ditambahkan
+
 export default function Navbar() {
   return (
     <div>
       {/* TopBar Hitam */}
       <header className="bg-black text-white px-6 py-4 flex justify-between items-center">
-        <div className="text-xl font-bold tracking-wider flex items-center gap-2">
-          <span className="bg-white text-black px-2 py-0.5 rounded font-black italic">LK</span>
+        {/* Logo LKI Kiri */}
+        <div className="flex items-center">
+          <img src={logoLki} alt="LKI Merch Logo" className="h-8 w-auto object-contain" />
         </div>
+
+        {/* Ikon Medsos Kanan */}
         <div className="flex items-center gap-4 text-sm font-medium">
-          <a href="#" className="hover:text-gray-400">IG</a>
-          <a href="#" className="hover:text-gray-400">WA</a>
+          <a href="#" className="hover:opacity-80 transition">
+            <img src={logoIg} alt="Instagram" className="w-5 h-5 object-contain" />
+          </a>
+          <a href="#" className="hover:opacity-80 transition">
+            <img src={logoWa} alt="WhatsApp" className="w-5 h-5 object-contain" />
+          </a>
         </div>
       </header>
 
