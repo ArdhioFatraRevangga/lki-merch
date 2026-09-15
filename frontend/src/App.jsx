@@ -2,11 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Contact from './components/Contact'; // Import halaman Contact
 import InstagramFeed from './components/InstagramFeed';
 import Services from './components/Services';
 import Footer from './components/Footer';
 
-// 1. Bungkus komponen untuk Halaman Home
+// Halaman Home
 function HomePage() {
   return (
     <>
@@ -17,7 +18,7 @@ function HomePage() {
   );
 }
 
-// 2. Bungkus komponen untuk Halaman About
+// Halaman About
 function AboutPage() {
   return (
     <>
@@ -27,23 +28,29 @@ function AboutPage() {
   );
 }
 
+// Halaman Contact Us
+function ContactPage() {
+  return (
+    <>
+      <Contact />
+      <Services />
+    </>
+  );
+}
+
 function App() {
   return (
     <Router>
       <div className="bg-white min-h-screen text-black font-sans">
-        
-        {/* Navbar akan selalu muncul di halaman apa pun */}
         <Navbar />
 
-        {/* Area ini yang akan bergonta-ganti sesuai URL */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} /> {/* Route Contact */}
         </Routes>
 
-        {/* Footer (jika ada) akan selalu muncul di bawah */}
-        {/* <Footer /> */} 
-        
+        <Footer />
       </div>
     </Router>
   );
