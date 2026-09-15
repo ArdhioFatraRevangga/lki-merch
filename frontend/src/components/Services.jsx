@@ -1,6 +1,6 @@
 import logoWa from '../assets/wa-hitam.png';
 import logoIg from '../assets/ig-hitam.png';
-import logoLegacy from '../assets/legacy-hitam.png'; // 1. Import logo legacy
+import logoLegacy from '../assets/legacy-hitam.png'; 
 
 export default function Services() {
   return (
@@ -13,29 +13,30 @@ export default function Services() {
       </div>
 
       <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-        {/* Tombol Aksi Kiri */}
+        
+        {/* Tombol Aksi Kiri (Jaini Purva) */}
         <div className="flex flex-col gap-3 w-full md:w-1/3">
-          <button className="bg-black text-white py-3 px-6 rounded-lg font-medium text-sm tracking-wide hover:bg-gray-800 transition text-center shadow">
+          <button className="bg-black text-white py-3 px-6 rounded-lg font-jaini text-2xl tracking-wide hover:bg-gray-800 transition text-center shadow">
             How to order
           </button>
-          <button className="bg-black text-white py-3 px-6 rounded-lg font-medium text-sm tracking-wide hover:bg-gray-800 transition text-center shadow">
+          <button className="bg-black text-white py-3 px-6 rounded-lg font-jaini text-2xl tracking-wide hover:bg-gray-800 transition text-center shadow">
             Konfirmasi Pembayaran
           </button>
         </div>
 
         {/* Logo & Sosmed Kanan */}
         <div className="flex flex-col items-center w-full md:w-1/3 text-center">
-          
-          {/* 2. Ganti teks H2 dengan tag <img> untuk logo Legacy */}
           <img 
             src={logoLegacy} 
             alt="Legacy Keeps Inspiring" 
             className="h-16 w-auto object-contain mb-2" 
           />
           
-          <p className="text-xs tracking-widest text-gray-500 mb-4">Find Us</p>
+          {/* Teks Find Us (Jacques Francois Shadow) */}
+          <p className="text-xl tracking-widest text-gray-800 mb-4 font-jacques">
+            Find Us
+          </p>
           
-          {/* Ikon Medsos */}
           <div className="flex gap-4 items-center">
             <a href="#" className="hover:opacity-75 transition">
               <img src={logoIg} alt="Instagram" className="w-6 h-6 object-contain" />
