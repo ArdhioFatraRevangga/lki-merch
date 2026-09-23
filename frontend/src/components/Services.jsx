@@ -1,5 +1,7 @@
 import logoWa from '../assets/wa-hitam.png';
 import logoIg from '../assets/ig-hitam.png';
+import logoShoope from '../assets/shoope.png'
+import logoTiktok from '../assets/tiktok.png'
 import logoLegacy from '../assets/legacy-hitam.png'; 
 
 export default function Services() {
@@ -43,6 +45,12 @@ export default function Services() {
             </a>
             <a href="#" className="hover:opacity-75 transition">
               <img src={logoWa} alt="WhatsApp" className="w-6 h-6 object-contain" />
+            </a>
+            <a href="#" className="hover:opacity-75 transition">
+              <img src={logoShoope} alt="Shoope" className="w-6 h-6 object-contain" />
+            </a>
+            <a href="#" className="hover:opacity-75 transition">
+              <img src={logoTiktok} alt="Tiktok" className="w-6 h-6 object-contain" />
             </a>
             {/* <span className="text-sm font-bold tracking-wider cursor-pointer hover:text-gray-600 mt-1">Shopee</span>
             <span className="text-sm font-bold tracking-wider cursor-pointer hover:text-gray-600 mt-1">TikTok</span> */}

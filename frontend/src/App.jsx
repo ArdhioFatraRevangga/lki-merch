@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import PromoBanner from './components/PromoBanner';
 import About from './components/About';
 import Contact from './components/Contact'; // Import halaman Contact
 import InstagramFeed from './components/InstagramFeed';
@@ -12,6 +13,7 @@ function HomePage() {
   return (
     <>
       <Hero />
+      <PromoBanner/>
       <InstagramFeed />
       <Services />
     </>
