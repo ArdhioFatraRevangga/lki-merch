@@ -2,8 +2,8 @@ import { NavLink } from 'react-router-dom';
 import logoLki from '../assets/logo-lkimerch-putih.png';
 import logoWa from '../assets/wa.png';
 import logoIg from '../assets/ig.png';
-import logoShopee from '../assets/shoope_putih.png'; // Import Shopee
-import logoTiktok from '../assets/tiktok_putih.png'; // Import TikTok
+import logoShopee from '../assets/shoope_putih.png';
+import logoTiktok from '../assets/tiktok_putih.png';
 
 export default function Navbar() {
   const navLinkStyle = ({ isActive }) => 
@@ -15,23 +15,29 @@ export default function Navbar() {
     <div>
       {/* TopBar Hitam */}
       <header className="bg-black text-white px-6 py-4 flex justify-between items-center">
-        {/* Logo LKI Kiri */}
         <div className="flex items-center">
           <img src={logoLki} alt="LKI Merch Logo" className="h-8 w-auto object-contain" />
         </div>
 
-        {/* Ikon Medsos Kanan (Instagram, WhatsApp, Shopee, TikTok) */}
+        {/* Ikon Medsos dengan Link Aktif */}
         <div className="flex items-center gap-4 text-sm font-medium">
-          <a href="#" className="hover:opacity-80 transition">
+          {/* Instagram */}
+          <a href="https://www.instagram.com/lkimerch?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
             <img src={logoIg} alt="Instagram" className="w-5 h-5 object-contain" />
           </a>
-          <a href="#" className="hover:opacity-80 transition">
+          
+          {/* WhatsApp */}
+          <a href="https://wa.me/628133300078" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
             <img src={logoWa} alt="WhatsApp" className="w-5 h-5 object-contain" />
           </a>
-          <a href="#" className="hover:opacity-80 transition">
+          
+          {/* Shopee */}
+          <a href="https://shopee.co.id/toko_kamu" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
             <img src={logoShopee} alt="Shopee" className="w-5 h-5 object-contain" />
           </a>
-          <a href="#" className="hover:opacity-80 transition">
+          
+          {/* TikTok */}
+          <a href="https://www.tiktok.com/@lki.merch?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
             <img src={logoTiktok} alt="TikTok" className="w-5 h-5 object-contain" />
           </a>
         </div>

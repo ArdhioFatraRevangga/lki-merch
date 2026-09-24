@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logoWa from '../assets/wa-hitam.png';
 import logoIg from '../assets/ig-hitam.png';
 import logoShoope from '../assets/shoope.png'
@@ -18,10 +19,13 @@ export default function Services() {
         
         {/* Tombol Aksi Kiri (Jaini Purva) */}
         <div className="flex flex-col gap-3 w-full md:w-1/3">
-          <button className="bg-black text-white py-3 px-6 rounded-lg font-jaini text-2xl tracking-wide hover:bg-gray-800 transition text-center shadow">
+          <Link 
+            to="/how-to-order" 
+            className="bg-black text-white py-3 px-6 rounded-lg font-jaini text-2xl tracking-wide hover:bg-gray-800 transition text-center shadow block"
+          >
             How to order
-          </button>
-          <button className="bg-black text-white py-3 px-6 rounded-lg font-jaini text-2xl tracking-wide hover:bg-gray-800 transition text-center shadow">
+          </Link>
+          <button className="bg-black text-white py-3 px-6 rounded-lg font-jaini text-2xl tracking-wide hover:bg-gray-800 transition text-center shadow w-full">
             Konfirmasi Pembayaran
           </button>
         </div>
@@ -40,20 +44,45 @@ export default function Services() {
           </p>
           
           <div className="flex gap-4 items-center">
-            <a href="#" className="hover:opacity-75 transition">
+            {/* Instagram */}
+            <a 
+              href="https://www.instagram.com/lkimerch?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:opacity-75 transition"
+            >
               <img src={logoIg} alt="Instagram" className="w-6 h-6 object-contain" />
             </a>
-            <a href="#" className="hover:opacity-75 transition">
+
+            {/* WhatsApp */}
+            <a 
+              href="https://wa.me/628133300078" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:opacity-75 transition"
+            >
               <img src={logoWa} alt="WhatsApp" className="w-6 h-6 object-contain" />
             </a>
-            <a href="#" className="hover:opacity-75 transition">
-              <img src={logoShoope} alt="Shoope" className="w-6 h-6 object-contain" />
+
+            {/* Shopee */}
+            <a 
+              href="https://shopee.co.id/toko_kamu" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:opacity-75 transition"
+            >
+              <img src={logoShoope} alt="Shopee" className="w-6 h-6 object-contain" />
             </a>
-            <a href="#" className="hover:opacity-75 transition">
+
+            {/* TikTok */}
+            <a 
+              href="https://www.tiktok.com/@lki.merch?is_from_webapp=1&sender_device=pc" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:opacity-75 transition"
+            >
               <img src={logoTiktok} alt="Tiktok" className="w-6 h-6 object-contain" />
             </a>
-            {/* <span className="text-sm font-bold tracking-wider cursor-pointer hover:text-gray-600 mt-1">Shopee</span>
-            <span className="text-sm font-bold tracking-wider cursor-pointer hover:text-gray-600 mt-1">TikTok</span> */}
           </div>
         </div>
       </div>
