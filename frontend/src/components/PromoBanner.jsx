@@ -5,7 +5,8 @@ export default function PromoBanner() {
       <div className="max-w-2xl text-left">
         <h2 
           style={{ fontFamily: "'New Rocker', serif" }} 
-          className="text-2xl md:text-3xl text-black leading-tight tracking-wide"
+          className="text-2xl md:text-3xl text-black italic tracking-wide"
+          // className="font-serif italic text-gray-800 text-sm tracking-wide"
         >
           Belanja langsung melalui website resmi LKI Merch jauh lebih hemat & murah dibanding di Online Shop lain!
         </h2>

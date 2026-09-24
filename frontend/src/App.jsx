@@ -7,6 +7,7 @@ import Contact from './components/Contact'; // Import halaman Contact
 import InstagramFeed from './components/InstagramFeed';
 import Services from './components/Services';
 import Footer from './components/Footer';
+import HowToOrder from './components/HowToOrder';
 
 // Halaman Home
 function HomePage() {
@@ -50,6 +51,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} /> {/* Route Contact */}
+          <Route path="/how-to-order" element={<HowToOrder />} />
         </Routes>
 
         <Footer />

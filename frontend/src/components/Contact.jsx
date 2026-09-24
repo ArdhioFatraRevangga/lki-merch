@@ -1,4 +1,4 @@
-import logoWa from '../assets/wa.png';
+import logoWa from '../assets/wa.png'; // pastikan pakai logo WA warna asli / hijau
 
 export default function Contact() {
   return (
@@ -21,13 +21,16 @@ export default function Contact() {
             Customer Support kami terkait pertanyaan atau informasi mengenai produk dan penjualan, (Order / pemesanan, Produk, dll)
           </p>
           <a 
-            href="https://wa.me/" 
+            href="https://wa.me/628133300078" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="mt-3 inline-flex items-center gap-2 bg-black text-white text-xs md:text-sm px-4 py-2 rounded-md hover:bg-gray-800 transition shadow"
+            className="mt-3 inline-flex items-center justify-start gap-4 bg-black text-white text-xs md:text-sm px-6 py-3 rounded-xl hover:bg-gray-800 transition shadow w-full max-w-md"
           >
-            <img src={logoWa} alt="WhatsApp" className="w-4 h-4 object-contain filter invert" />
-            HUBUNGI CUSTOMER SUPPORT KAMI
+            {/* Hapus 'filter invert' jika gambar aslinya sudah berwarna terang/putih */}
+            <img src={logoWa} alt="WhatsApp" className="w-6 h-6 object-contain flex-shrink-0" />
+            <span style={{ fontFamily: "'Jacques Francois Shadow', serif" }} className="tracking-wide text-sm md:text-base flex-grow text-center">
+              HUBUNGI CUSTOMER SUPPORT KAMI
+            </span>
           </a>
         </div>
 
@@ -40,13 +43,15 @@ export default function Contact() {
             Admin khusus untuk kalian yang ingin memberikan kritik, saran dan berbagai macam masukan, supaya kami agar menjadi lebih baik. (siap melayani kalian 24/7)
           </p>
           <a 
-            href="https://wa.me/" 
+            href="https://wa.me/628133300078" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="mt-3 inline-flex items-center gap-2 bg-black text-white text-xs md:text-sm px-4 py-2 rounded-md hover:bg-gray-800 transition shadow"
+            className="mt-3 inline-flex items-center justify-start gap-4 bg-black text-white text-xs md:text-sm px-6 py-3 rounded-xl hover:bg-gray-800 transition shadow w-full max-w-md"
           >
-            <img src={logoWa} alt="WhatsApp" className="w-4 h-4 object-contain filter invert" />
-            HUBUNGI CUSTOMER SUPPORT KAMI
+            <img src={logoWa} alt="WhatsApp" className="w-6 h-6 object-contain flex-shrink-0" />
+            <span style={{ fontFamily: "'Jacques Francois Shadow', serif" }} className="tracking-wide text-sm md:text-base flex-grow text-center">
+              HUBUNGI CUSTOMER SUPPORT KAMI
+            </span>
           </a>
         </div>
 
@@ -59,12 +64,13 @@ export default function Contact() {
             Kirimkan email kalian untuk penawaran kerja sama, Sponsorship dll.
           </p>
           <a 
-            href="mailto:lkimerchandise@gmail.com"
-            className="mt-3 inline-flex items-center gap-2 bg-black text-white text-xs md:text-sm px-5 py-2 rounded-md hover:bg-gray-800 transition shadow"
+            href="mailto:lkimerch22@gmail.com"
+            className="mt-3 inline-flex items-center justify-start gap-4 bg-black text-white text-xs md:text-sm px-6 py-3 rounded-xl hover:bg-gray-800 transition shadow w-full max-w-md"
           >
-            {/* Simbol Amplop Sederhana */}
-            <span className="text-base">✉</span> 
-            EMAIL LKIMERCHANDISE
+            <span className="text-lg flex-shrink-0 w-6 text-center">✉</span>
+            <span style={{ fontFamily: "'Jacques Francois Shadow', serif" }} className="tracking-wide text-sm md:text-base flex-grow text-center">
+              EMAIL LKIMERCHANDISE
+            </span>
           </a>
         </div>
 
